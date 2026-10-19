@@ -102,3 +102,11 @@ These are project-specific design tokens, not arbitrary universal KESTREL rules.
 - Check line breaks and CTA visibility in the hero against the eventual real image; for the demo, placeholders are intentionally neutral.
 - Check all sections use the same typographic scale rather than individual one-off heading values.
 - Do not claim browser visual validation from code inspection alone.
+
+## 8. Updated KARLE type and CTA decision (2026-10-19)
+- Previous Georgia/Arial pairing in section 7 is superseded for this demo by **Manrope** for headings, body, navigation and controls. Fallback: Arial/Helvetica/sans-serif.
+- H1 53–88px desktop and ~41–57px mobile, weight 500. H2 35–54px desktop and 32–40px mobile, weight 500. H3 25–34px. Prioritize readable proportions over ornamental display styling.
+- All primary CTA buttons, including header, hero and final reservation, share the same dark-green background (#42594f), white text, 52px minimum height and hover color. On image backgrounds keep enough contrast to distinguish button edges.
+- Headings must explain the actual section: accommodation types, facilities, geographic surroundings, review source, booking action. Reject generic lifestyle slogans and repeated information across heading and paragraph.
+- A font or copy change does not authorize changing the user-approved full-width hero composition or six-section information architecture.
+- Check headings, truncation, CTA contrast and content at 375/768/1440px in a browser before calling the design finished.
