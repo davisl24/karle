@@ -70,3 +70,35 @@ This is a practical implementation brief, not permission to change approved cont
 - `KESTREL_WEBSITE_PROJECT_WORKFLOW_v1.0`: project research, options and approval discipline, design QA.
 - `seven-principle-checklist`: hero, hierarchy, whitespace, contrast, proof, typography, mobile.
 - User-approved decisions override exploratory options. No unrequested changes to approved parts.
+
+## 7. KARLE typography, spacing and labels — approved implementation baseline
+
+These are project-specific design tokens, not arbitrary universal KESTREL rules. Keep the approved full-width hero and six-section structure.
+
+### Type scale
+- Display/H1: Georgia, regular 400; desktop fluid 64–96px, mobile fluid 44–58px; line-height 1.06; modest negative tracking. Only one H1.
+- H2: Georgia, regular 400; desktop 40–58px, mobile 34–42px; line-height 1.14.
+- H3: Georgia, regular 400; 26–36px; line-height 1.18.
+- Main body: Arial or system sans, 16px, line-height 1.7; ideally max 60–70 characters per line.
+- Meta/supplemental text: 13–14px, never 10–11px for essential information.
+- Navigation/buttons: 14px; normal-to-medium weight, at least 44px comfortable click/tap target.
+- Typography families: Georgia for editorial headlines; Arial/system sans for interface and paragraphs. Never more than two families in this demo.
+
+### Spacing system
+- 8px base rhythm with tokens: 8, 16, 24, 32, 48, 64, 96px.
+- Section vertical padding desktop: ~88–104px; mobile ~64–72px, intentional exceptions only for hero.
+- Paragraph to action: 24–32px; eyebrow to heading (when needed): 12–16px; heading to description: 20–24px.
+- Use consistent container padding and text measure. Avoid arbitrary repeated 112px padding.
+
+### Meta labels and punctuation
+- Do not place a label above every heading: only show labels that add new useful context (e.g. source/Booking attribution, location, room category).
+- Prefer natural Latvian sentence case for meaningful labels; no forced ALL CAPS headings.
+- Do not use decorative "01 / SECTION" labels, slash-heavy breadcrumbs, or ornamental periods after headline fragments.
+- Headlines should be concrete and coherent; avoid duplicated information in kicker + heading + paragraph.
+- Retain punctuation when required for natural Latvian grammar, not as decoration.
+
+### QA gates
+- Confirm that sizes and text density remain legible at widths 375px, 768px, 1440px.
+- Check line breaks and CTA visibility in the hero against the eventual real image; for the demo, placeholders are intentionally neutral.
+- Check all sections use the same typographic scale rather than individual one-off heading values.
+- Do not claim browser visual validation from code inspection alone.
