@@ -1,0 +1,145 @@
+<!doctype html><html lang="lv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f9f8f5"><meta name="description" content="KARLE viesu nama galerijas demo: numuri, teritorija, brokastis un Baltijas jūras piekraste. Fotogrāfijas tiks pievienotas pēc saskaņošanas."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"><title>Galerija | KARLE</title><style>
+:root{--bg:#f9f8f5;--ink:#252c29;--green:#42594f;--muted:#626e67;--line:#d9ddd6}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 Manrope,Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:2px solid #b88651;outline-offset:4px}button{font:inherit}.wrap{max-width:1400px;margin:auto;padding-left:clamp(22px,4.5vw,74px);padding-right:clamp(22px,4.5vw,74px)}.header{height:88px;display:flex;justify-content:space-between;align-items:center;gap:24px}.brand{font-size:26px;font-weight:600;letter-spacing:.15em}.nav{display:flex;gap:30px;align-items:center;font-size:14px}.nav a[aria-current=page]{text-decoration:underline;text-underline-offset:8px}.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;background:var(--green);color:#fff;padding:14px 22px;min-height:52px;font-size:14px;font-weight:600}.btn:hover{background:#30463d}.toggle{display:none;background:transparent;border:0;color:var(--ink)}.eyebrow{font-size:14px;font-weight:500;color:var(--muted)}h1,h2,h3{font-weight:500;letter-spacing:-.045em;line-height:1.17}h1{font-size:clamp(48px,6vw,84px);max-width:900px;margin:22px 0}h2{font-size:clamp(35px,4vw,54px);margin:0 0 24px}h3{font-size:clamp(24px,2.7vw,34px);margin:0 0 12px}p{margin:0 0 24px;color:var(--muted);max-width:65ch}.intro{padding-top:90px;padding-bottom:88px;border-top:1px solid var(--line)}.intro p{font-size:18px;max-width:680px}.section{padding-top:96px;padding-bottom:96px;border-top:1px solid var(--line)}.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(35px,8vw,110px);align-items:center}.split.flip .media{order:2}.media{aspect-ratio:1.3;background:#d7ded7;position:relative;min-height:275px}.media.tall{aspect-ratio:1}.media:after{content:attr(data-label);position:absolute;bottom:18px;left:18px;font-size:12px;background:#f9f8f5;padding:7px 12px;color:#47594e}.links{display:flex;gap:24px;flex-wrap:wrap;margin-top:26px}.text-link{border-bottom:1px solid currentColor;padding-bottom:5px;font-size:14px;font-weight:600}.mini-list{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;max-width:600px}.mini-list span{border-top:1px solid var(--line);padding:15px 0;font-size:14px}.entry{padding:30px 0;border-top:1px solid var(--line)}.entry:last-child{border-bottom:1px solid var(--line)}.entry p{margin:0}.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.muted-area{background:#e6ebe6}.note{font-size:13px;color:var(--muted)}.rating{font-size:clamp(72px,10vw,135px);letter-spacing:-.07em;font-weight:500;line-height:1}.rating small{font-size:30px}.closing{text-align:center;background:#e6ebe6;padding:95px 20px}.closing p{margin:0 auto 25px}.footer{padding-top:55px;padding-bottom:25px}.foot-top,.foot-bottom{display:flex;justify-content:space-between;gap:25px}.foot-top p{font-size:13px;margin-top:20px}.foot-links{display:flex;gap:22px;flex-wrap:wrap;font-size:13px}.foot-bottom{border-top:1px solid var(--line);padding-top:20px;margin-top:70px;font-size:12px;color:var(--muted)}.foot-bottom span:last-child{max-width:450px}@media(max-width:760px){.header{height:70px}.brand{font-size:24px}.toggle{display:block}.nav{display:none;position:absolute;left:0;right:0;top:70px;z-index:10;background:var(--bg);flex-direction:column;align-items:stretch;padding:25px;gap:18px;border-bottom:1px solid var(--line)}.nav.open{display:flex}.intro{padding-top:65px;padding-bottom:65px}.intro p{font-size:16px}.section{padding-top:72px;padding-bottom:72px}.split,.info-grid{grid-template-columns:1fr;gap:32px}.split.flip .media{order:0}.media{min-height:240px}.mini-list{gap:0 16px}.closing{padding:76px 22px}.foot-top,.foot-bottom{flex-direction:column}h1{font-size:clamp(42px,10vw,60px)}h2{font-size:clamp(32px,8vw,42px)}.foot-bottom{margin-top:48px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.score-panel{min-width:0}.score-line{display:flex;align-items:baseline;gap:16px;white-space:nowrap;margin:14px 0 10px}.score-line strong{font-size:clamp(76px,10vw,132px);letter-spacing:-.085em;font-weight:500;line-height:1}.score-line span{font-size:21px;font-weight:500;color:var(--muted)}.score-panel p{margin-bottom:8px}.score-details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-bottom:27px}.score-details>div{border-top:1px solid var(--line);padding-top:12px}.score-details span{display:block;font-size:13px;color:var(--muted);min-height:42px}.score-details strong{display:block;font-weight:600;font-size:26px}@media(max-width:580px){.score-details{grid-template-columns:1fr 1fr;gap:16px}.score-line strong{font-size:80px}}.skip-link{position:absolute;z-index:1000;top:-80px;left:18px;background:#fff;color:#20342b;padding:12px 18px;border:2px solid #42594f}.skip-link:focus{top:12px}.navigation-list{list-style:none;padding:0;margin:0;display:flex;align-items:center;gap:30px}.navigation-list li{margin:0}.navigation-list a{display:inline-flex;align-items:center;min-height:44px}.navigation-list a[aria-current="page"]{font-weight:700;text-decoration:underline;text-underline-offset:7px}.navigation-list .btn{min-height:52px}.topbar,.header{position:sticky;top:0;z-index:40;background:#f9f8f5}#main-content{scroll-margin-top:88px}a:focus-visible,button:focus-visible{outline:3px solid #b88651;outline-offset:3px}@media(max-width:760px){.navigation-list{flex-direction:column;align-items:stretch;gap:8px}.navigation-list a{display:flex;min-height:48px}.navigation-list li{width:100%}.topbar,.header{z-index:40}#main-content{scroll-margin-top:70px}}/* KARLE / approved design QA consolidation (Kestrel 02 v1.1). */
+:root{--k-container:1280px;--k-gutter:clamp(20px,3.7vw,48px);--k-space-section:clamp(72px,7vw,104px);--k-h1:clamp(48px,5.6vw,78px);--k-h2:clamp(32px,3.6vw,48px);--k-h3:clamp(23px,2.35vw,30px)}
+html{scroll-padding-top:90px}body{overflow-wrap:break-word}
+.wrap{max-width:var(--k-container);padding-left:var(--k-gutter);padding-right:var(--k-gutter)}
+h1,h2,h3{overflow-wrap:normal;hyphens:auto}
+a,button{-webkit-tap-highlight-color:transparent}
+a:focus-visible,button:focus-visible{outline:3px solid #b88651;outline-offset:3px}
+.navigation-list{gap:clamp(14px,2vw,28px)}
+.navigation-list a{white-space:nowrap}
+button.menu,button.toggle{cursor:pointer;min-height:44px;min-width:44px}
+.section{padding-top:var(--k-space-section);padding-bottom:var(--k-space-section)}
+.intro{padding-top:clamp(64px,7vw,92px);padding-bottom:clamp(64px,7vw,92px)}
+.intro h1{font-size:var(--k-h1);line-height:1.13;letter-spacing:-.04em}
+.section h2,.intro h2{font-size:var(--k-h2);line-height:1.2}
+.section h3{font-size:var(--k-h3);line-height:1.23}
+.section p,.intro p{max-width:65ch}
+.split,.info-grid{gap:clamp(32px,6vw,82px)}
+.split > *, .info-grid > *{min-width:0}
+.media{min-width:0}
+.closing h2{font-size:var(--k-h2);line-height:1.18}
+.closing{padding:clamp(72px,7vw,104px) 20px}
+.text-link,.text-cta{display:inline-flex;min-height:38px;align-items:center}
+@media(max-width:900px){.navigation-list{gap:12px}.header,.topbar{gap:12px}}
+@media(max-width:760px){
+:root{--k-gutter:clamp(20px,5.6vw,24px);--k-space-section:64px;--k-h1:clamp(38px,9.2vw,54px);--k-h2:clamp(30px,7.7vw,38px);--k-h3:clamp(22px,5.8vw,28px)}
+html{scroll-padding-top:72px}
+.navigation-list{gap:8px}
+.nav,.links{max-height:calc(100svh - 70px);overflow-y:auto}
+.section,.rooms-section{padding-top:64px;padding-bottom:64px}
+.intro{padding-top:56px;padding-bottom:56px}
+.split,.info-grid{grid-template-columns:minmax(0,1fr)}
+.split.flip .media{order:0}
+.media{width:100%}
+.closing{padding:70px 22px}
+}
+@media(max-width:390px){.wrap{padding-left:18px;padding-right:18px}}
+/* 390px defensive QA: prevent overflow without changing approved art direction */
+@media(max-width:760px){
+html,body{width:100%;max-width:100%}
+main,section,footer{min-width:0}
+h1,h2,h3{max-width:100%;word-break:normal;overflow-wrap:break-word}
+.navigation-list,.navigation-list li{min-width:0}
+.navigation-list a{white-space:normal}
+button.menu,button.toggle{position:relative;z-index:2}
+.media::after{max-width:calc(100% - 36px);white-space:normal;line-height:1.5}
+.foot-links,.footer-nav{row-gap:10px}
+}
+@media(max-width:420px){
+:root{--k-gutter:20px}
+.intro h1{font-size:clamp(36px,9.2vw,42px)}
+.section h2,.intro h2{font-size:clamp(29px,7.5vw,34px)}
+.btn,.button,.nav-book,.hero-primary{max-width:100%;white-space:normal;text-align:left}
+}
+@media(max-width:420px){.score-line{gap:10px}.score-line strong{font-size:clamp(70px,19vw,80px)}.score-line span{font-size:17px}.score-details{grid-template-columns:repeat(2,minmax(0,1fr))}}.breadcrumbs{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);margin:0 0 30px}.breadcrumbs a{text-decoration:underline;text-underline-offset:4px}.breadcrumbs a:hover{color:var(--green)}@media(max-width:760px){.breadcrumbs{margin-bottom:23px}}/* Demo release: functional hierarchy + restrained spacing */
+.navigation-list{gap:clamp(10px,1.6vw,22px)}
+.navigation-list .nav-book,.navigation-list .btn{padding-inline:clamp(13px,1.5vw,22px);font-size:13px}
+@media(min-width:761px) and (max-width:1100px){.navigation-list{gap:10px}.navigation-list a{font-size:12px}.navigation-list .nav-book,.navigation-list .btn{padding-inline:13px;font-size:12px}}
+@media(max-width:760px){.navigation-list .nav-book,.navigation-list .btn{font-size:14px}}
+/* KARLE V1 final rhythm pass — targeted, not a redesign */
+@media(min-width:761px){
+.intro{padding-top:64px;padding-bottom:64px}
+.section{padding-top:clamp(64px,6.5vw,88px);padding-bottom:clamp(64px,6.5vw,88px)}
+.closing{padding-top:76px;padding-bottom:76px}
+}
+@media(max-width:760px){
+.intro{padding-top:44px;padding-bottom:48px}
+.section{padding-top:52px;padding-bottom:52px}
+.section h2{margin-bottom:18px}
+.section p{margin-bottom:18px}
+.closing{padding-top:58px;padding-bottom:58px}
+.media{min-height:215px}
+}
+@media(max-width:390px){
+.intro h1{font-size:clamp(35px,9vw,39px)}
+.section h2{font-size:clamp(28px,7.35vw,32px)}
+}
+@media(min-width:1000px){.coast-section{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr)}.coast-section .media{aspect-ratio:1.5}.score-panel{padding-top:6px}}
+/* Remove decorative section separators; keep list, detail, mobile navigation and footer rules. */
+.intro,.section{border-top:0!important}
+
+/* Sixth page navigation: safely switch to compact menu before desktop nav crowds. */
+@media(min-width:761px) and (max-width:1170px){
+.header,.topbar{gap:12px}
+.navigation-list{gap:9px}
+.navigation-list a{font-size:12px}
+.navigation-list .btn,.navigation-list .nav-book{font-size:12px;padding-inline:11px}
+.brand,.logo{font-size:22px}
+}
+.surroundings{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,6vw,88px);padding-top:65px;padding-bottom:70px;background:#f0f2ee}.surroundings h2{margin-top:12px}.surroundings-links{display:flex;flex-wrap:wrap;gap:24px}@media(max-width:760px){.surroundings{grid-template-columns:1fr;padding-top:52px;padding-bottom:55px}}/* KARLE gallery: photographic editorial layout, intentional placeholders */
+.gallery-section{padding-top:34px;padding-bottom:58px}
+.gallery-section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:24px}
+.gallery-section-head h2{font-size:clamp(28px,3.6vw,44px);margin-bottom:9px}
+.gallery-section-head p{margin-bottom:0}
+.gallery-grid{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.gallery-grid-rooms{grid-template-rows:repeat(2,minmax(175px,1fr))}
+.gallery-grid-rooms .large{grid-row:span 2;min-height:480px}
+.gallery-grid-landscape,.gallery-grid-coast{grid-template-columns:1.45fr 1fr}
+.gallery-grid-food{grid-template-columns:1fr}
+.gallery-tile{background:#d7ded7;position:relative;min-height:225px;display:flex;align-items:end;padding:18px}
+.gallery-tile.wide{min-height:320px}
+.gallery-tile span{display:inline-block;background:#f9f8f5;padding:8px 12px;color:#42594f;font-size:12px;line-height:1.4}
+.gallery-last{padding-bottom:85px}
+@media(max-width:760px){
+.gallery-section{padding-top:18px;padding-bottom:42px}
+.gallery-section-head{align-items:start;flex-direction:column;gap:12px}
+.gallery-grid,.gallery-grid-landscape,.gallery-grid-coast{grid-template-columns:1fr;gap:12px}
+.gallery-grid-rooms{grid-template-rows:none}
+.gallery-grid-rooms .large{grid-row:auto;min-height:260px}
+.gallery-tile,.gallery-tile.wide{min-height:205px}
+.gallery-last{padding-bottom:55px}
+}
+</style></head><body><a class="skip-link" href="#main-content">Pāriet uz saturu</a><header class="header wrap"><a class="brand" href="/" aria-label="KARLE sākumlapa">KARLE</a><button class="toggle" aria-controls="nav" aria-expanded="false" aria-label="Atvērt izvēlni">Izvēlne ☰</button><nav class="nav" id="nav" aria-label="Galvenā navigācija"><ul class="navigation-list"><li><a href="/">Sākums</a></li><li><a href="/numuri/">Numuri</a></li><li><a href="/atputa/">Atpūta</a></li><li><a href="/galerija/" aria-current="page">Galerija</a></li><li><a href="/par-mums/">Par mums</a></li><li><a href="/kontakti/">Kontakti</a></li><li><a class="btn" href="/kontakti/" aria-label="Rezervācijas informācija">Rezervācijas informācija <span aria-hidden="true">↗</span></a></li></ul></nav></header><main id="main-content">
+<section class="intro wrap">
+<nav class="breadcrumbs" aria-label="Lapas ceļš"><a href="/">Sākums</a><span aria-hidden="true">/</span><span aria-current="page">Galerija</span></nav>
+<span class="eyebrow">Viesu nams pie Baltijas jūras</span>
+<h1>KARLE galerija</h1>
+<p>Apskati, kāda būs viesu nama numuru, teritorijas un piejūras fotogrāfiju izlase. Šajā demo attēlu vietas ir apzināti neaizpildītas līdz īsto fotogrāfiju saskaņošanai.</p>
+</section>
+<section class="gallery-section wrap" aria-labelledby="gallery-rooms">
+<div class="gallery-section-head"><div><h2 id="gallery-rooms">Numuri</h2><p>Numuru interjers, aprīkojums un atšķirības.</p></div><a class="text-link" href="/numuri/">Par numuriem ↗</a></div>
+<div class="gallery-grid gallery-grid-rooms">
+<div class="gallery-tile large" role="img" aria-label="Vieta galvenajam autentiskajam numura attēlam"><span>Numura fotogrāfija</span></div>
+<div class="gallery-tile" role="img" aria-label="Vieta citai autentiskai numura fotogrāfijai"><span>Numura detaļas</span></div>
+<div class="gallery-tile" role="img" aria-label="Vieta autentiskai numura vai terases fotogrāfijai"><span>Numurs vai terase</span></div>
+</div>
+</section>
+<section class="gallery-section wrap" aria-labelledby="gallery-outdoors">
+<div class="gallery-section-head"><div><h2 id="gallery-outdoors">Viesu nams un teritorija</h2><p>Ārtelpa, dārzs un vide pie viesu nama.</p></div><a class="text-link" href="/atputa/">Atpūtas iespējas ↗</a></div>
+<div class="gallery-grid gallery-grid-landscape">
+<div class="gallery-tile wide" role="img" aria-label="Vieta autentiskai viesu nama teritorijas fotogrāfijai"><span>Viesu nama teritorija</span></div>
+<div class="gallery-tile" role="img" aria-label="Vieta autentiskai dārza vai terases fotogrāfijai"><span>Dārzs vai terase</span></div>
+</div>
+</section>
+<section class="gallery-section wrap" aria-labelledby="gallery-coast">
+<div class="gallery-section-head"><div><h2 id="gallery-coast">Jūra un apkārtne</h2><p>Vitrupes piekraste un Meleku līča apkārtne.</p></div><a class="text-link" href="/par-mums/">Par apkārtni ↗</a></div>
+<div class="gallery-grid gallery-grid-coast"><div class="gallery-tile wide" role="img" aria-label="Vieta autentiskai Baltijas jūras piekrastes fotogrāfijai"><span>Piejūras fotogrāfija</span></div><div class="gallery-tile" role="img" aria-label="Vieta autentiskai apkārtnes fotogrāfijai"><span>Apkārtne</span></div></div>
+</section>
+<section class="gallery-section wrap gallery-last" aria-labelledby="gallery-food">
+<div class="gallery-section-head"><div><h2 id="gallery-food">Brokastis un atpūta</h2><p>Viesu nama piedāvājums, ko ilustrēsim ar reāliem kadriem.</p></div></div>
+<div class="gallery-grid gallery-grid-food"><div class="gallery-tile wide" role="img" aria-label="Vieta autentiskai brokastu vai ēdināšanas fotogrāfijai"><span>Brokastis vai atpūta</span></div></div>
+</section>
+<section class="closing"><h2>Uzzini vairāk par KARLE</h2><p>Apskati numurus un praktisko informāciju, pirms plāno uzturēšanos.</p><a class="btn" href="/numuri/">Apskatīt numurus ↗</a></section>
+</main><footer class="footer wrap"><div class="foot-top"><div><a href="/" class="brand">KARLE</a><p>Jūraslīči, Vitrupe, Latvija</p></div><nav class="foot-links" aria-label="Kājenes navigācija"><a href="/">Sākums</a><a href="/numuri/">Numuri</a><a href="/atputa/">Atpūta</a><a href="/galerija/">Galerija</a><a href="/par-mums/">Par mums</a><a href="/kontakti/">Kontakti</a></nav></div><div class="foot-bottom"><span>© KARLE · Demonstrācijas koncepts</span><span>Neoficiāls potenciālā klienta demo. Pakalpojumu pieejamība un noteikumi jāpārbauda pie viesu nama. Attēli ir vietturi.</span></div></footer><script>const t=document.querySelector('.toggle'),n=document.querySelector('.nav');t.addEventListener('click',()=>{const a=n.classList.toggle('open');t.setAttribute('aria-expanded',String(a));t.textContent=a?'Aizvērt ✕':'Izvēlne ☰'});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');t.setAttribute('aria-expanded','false');t.textContent='Izvēlne ☰'}));;document.addEventListener('keydown',e=>{if(e.key==='Escape'){const nav=document.querySelector('.nav'),btn=document.querySelector('.toggle');if(nav.classList.contains('open')){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Atvērt izvēlni');btn.textContent='Izvēlne ☰';btn.focus()}}});</script></body></html>
